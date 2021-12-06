@@ -1,19 +1,19 @@
 # `macetada/plug`
 
-Repositório para macetar o Elixir/Plug com requests.
+Repositório para macetar o Plug com requests.
 
 ## Subindo o server
 
 ```bash
-docker build -t elixirplug .
-docker run --rm -it -p 8069:8069 elixirplug
+docker build -t plug .
+docker run --rm -it -p 8085:8085 plug
 ```
 
 ou:
 
 ```bash
-docker pull ghcr.io/macetada/elixirplug:main
-docker run --rm -p 8069:8069 ghcr.io/macetada/elixirplug:main
+docker pull ghcr.io/macetada/plug:main
+docker run --rm -p 8085:8085 ghcr.io/macetada/plug:main
 ```
 
 > Este procedimento deve ser feito numa máquina servidora ou num cluster.
