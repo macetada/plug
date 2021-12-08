@@ -8,8 +8,10 @@ defmodule MacetadaPlug.Application do
   @impl true
   def start(_type, _args) do
     children = [
-      {Plug.Cowboy, scheme: :http, plug: ElixirPlug, options: [port: 8069]}
+      {Plug.Cowboy, scheme: :http, plug: ElixirPlug, options: [port: 80]}
     ]
+
+    IO.puts("Running Plug server")
 
     # See https://hexdocs.pm/elixir/Supervisor.html
     # for other strategies and supported options
